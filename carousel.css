@@ -1,0 +1,65 @@
+.clearfix:after{
+    content:'';
+    height:0;
+    display:block;
+    visibility:hidden;
+    clear:both 
+}
+
+.carousel{
+    position: relative;
+    overflow: hidden;
+    border: solid 2px #555;
+}
+
+.carousel__list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel__item{
+    float: left;
+}
+
+.carousel__pre,
+.carousel__next{
+    position : absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.carousel__pre{
+    left: 10px;
+}
+
+.carousel__next{
+    right: 10px;
+}
+
+.carousel__control{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.carousel__control i{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #aaa;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.carousel__control i.active{
+    background-color: black;
+}

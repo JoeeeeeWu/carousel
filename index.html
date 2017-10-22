@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    
+    <div class="carousel">
+        <ul class="carousel__list clearfix">
+            <li class="carousel__item"><img src="image/pic-1.jpg" alt="图片1"></li>
+            <li class="carousel__item"><img src="image/pic-2.jpg" alt="图片2"></li>
+            <li class="carousel__item"><img src="image/pic-3.jpg" alt="图片3"></li>
+            <li class="carousel__item"><img src="image/pic-4.jpg" alt="图片4"></li>
+        </ul>
+        <span class="carousel__control">
+            <i class="active"></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <div class="carousel__pre">&lt</div>
+        <div class="carousel__next">&gt</div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="carousel.js"></script>
+    <script>
+        $(function(){
+            $(".carousel").carousel();
+        })
+    </script>
+</body>
+</html>
